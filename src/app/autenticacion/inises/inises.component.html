@@ -11,7 +11,6 @@
             <input type="password" id="inputPassword" class="form-control" formControlName="password" required>
             <hr> <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Inicie sesión</button>
         </form>
-        <p class="alert alert-danger" *ngIf="mensaje"> El usuario o contraseña no es correcto </p>
         <p>Si no dispone de cuenta pulse <a routerLink="/registro">aquí</a></p>
         <button type="button" class="btn btn-block" (click)="signInWithGoogle()">
             <i class="fa fa-google" aria-hidden="true"></i>
